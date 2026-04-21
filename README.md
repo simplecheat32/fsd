@@ -1,10 +1,16 @@
 # Usage : 
+
 ( will need mysql 8 , tomcat 10 and java 21 )
+
 ( "cd" command is used to navigate to a folder in terminal)
+
 (if u keep mysql password as "admin123" then no need to change password in code files and compile them again for that u ned to open mysql terminal and enter this command : 
+
 "  ALTER USER 'root'@'localhost' IDENTIFIED BY 'admin123'; ")
 
+
 # 1 : in cmd :
+
 cd fsd1
 
 edit in the code : name etc.
@@ -194,41 +200,75 @@ java -cp "bin;lib/*" MainApp ( if doesn't work then first compile : "javac -cp "
 # 13 :
 
 open mysql client
+
 show databases; (check if "studentdb" database exists else "create database studentdb;")
+
 use studentdb;
+
 show tables; (check if "product" table exists else "create table product;")
+
 truncate product;
+
 in cmd 
+
 in file manager
+
 open fsd13
+
 u will find one more folder named "fsd13" in main "fsd13" folder 
+
 copy the *SECOND* fsd13 folder 
+
 navigate to C:\apache-tomcat-10.1.52\webapps
+
 paste the fsd13 folder 
+
 navigate to C:\apache-tomcat-10.1.52\bin
+
 double click the "startup.bat" file
+
 in browser : localhost:8080/fsd13/form
 
+
 # 14 : 
+
 in cmd 
+
 cd fsd14
+
 cd before
+
 python -m http.server 85
-in browser : localhost:85 
+
+in browser : localhost:85
+
 right click -> inspect -> click "network" section 
+
 back to cmd
+
 ctrl+c
+
 cd ..
+
 cd after 
+
 python -m  http.server 86
+
 in browser : localhost:86 
+
 right click -> inspect -> click "network" section 
+
 back to cmd -> ctrl+c
 
+
 # 15 :
+
 in cmd 
+
 cd fsd15
+
 java MainApp
+
 
 
 
